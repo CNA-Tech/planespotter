@@ -30,7 +30,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
       - name: mysql
-        image: 35.209.26.28/library/mysql:5.6
+        image: harbor.corp.local/library/mysql:5.6
         env:
           # Use secret in real usage
         - name: MYSQL_ROOT_PASSWORD

@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: planespotter-fe
-        image: 35.209.26.28/library/planespotter-frontend:V1
+        image: harbor.corp.local/library/planespotter-frontend:V1
         imagePullPolicy: IfNotPresent
         env:
         - name: PLANESPOTTER_API_ENDPOINT

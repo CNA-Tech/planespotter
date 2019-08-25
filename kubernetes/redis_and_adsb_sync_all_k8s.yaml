@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: redis-server
-        image: 35.209.26.28/library/redis:latest
+        image: harbor.corp.local/library/redis:latest
         ports:
         - containerPort: 6379
 ---
@@ -53,7 +53,7 @@ spec:
     spec:
       containers:
       - name: adsb-sync
-        image: 35.209.26.28/library/adsb-sync:V1
+        image: harbor.corp.local/library/adsb-sync:V1
         imagePullPolicy: IfNotPresent
         volumeMounts:
         - name: config-volume
